@@ -2,7 +2,7 @@ from flask import Flask, request
 import sqlite3
 
 app = Flask(__name__)
-DB_PASSWORD = "Abby-18021985@"  # Credencial hardcodeada (SAST)
+DB_PASSWORD = "change_in_production" # Credencial simulada
 
 @app.route("/buscar")
 def buscar():
