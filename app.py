@@ -17,7 +17,7 @@ def buscar():
 def calcular():
     expresion = request.args.get("expr")
     # Uso inseguro de eval (SAST)
-    return str(eval(expresion))
+    return "Calculo deshabilitado por seguridad"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
